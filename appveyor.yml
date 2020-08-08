@@ -17,11 +17,11 @@ before_build:
 
 build:
   verbosity: minimal
-  project: Cogito.Components.Quartz.sln
+  project: Cogito.Quartz.sln
 
 artifacts:
   - path: pkg\*.nupkg
-    name: Cogito.Components.Quartz
+    name: Cogito.Quartz
 
 deploy:
   provider: NuGet
