@@ -1,12 +1,17 @@
 ﻿using Autofac;
 using Autofac.Extras.Quartz;
 
+
 using Cogito.Autofac;
+using Cogito.Extensions.Options.Autofac;
 using Cogito.Extensions.Options.Configuration.Autofac;
 using Cogito.Quartz.Hosting;
 using Cogito.Quartz.Options;
 
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+
+using Quartz;
 
 namespace Cogito.Quartz.Autofac
 {
@@ -24,6 +29,7 @@ namespace Cogito.Quartz.Autofac
             builder.Configure<QuartzOptions>("Quartz");
             builder.Configure<QuartzHostedServiceOptions>("Quartz:Host");
             builder.RegisterType<QuartzHostedService>().As<IHostedService>();
+            builder.RegisterBuildCallback(ctx => LogContext.SetCurrentLogProvider(ctx.Resolve<ILoggerFactory>()));
         }
 
     }
