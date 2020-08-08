@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-      <Description>Provides utilites and extensions for Quartz and Autofac.</Description>
-      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Description>Provides utilites and extensions for Quartz and Autofac.</Description>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Autofac.Extras.Quartz" Version="5.3.0" />
-    <PackageReference Include="Cogito.Autofac" Version="2.2.10" />
-    <PackageReference Include="Cogito.Extensions.Options.Autofac" Version="2.0.17" />
-    <PackageReference Include="Cogito.Extensions.Options.Configuration.Autofac" Version="2.0.17" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.6" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Autofac.Extras.Quartz" Version="5.3.0" />
+        <PackageReference Include="Cogito.Autofac" Version="2.2.10" />
+        <PackageReference Include="Cogito.Extensions.Options.Autofac" Version="2.0.17" />
+        <PackageReference Include="Cogito.Extensions.Options.Configuration.Autofac" Version="2.0.17" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.6" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Cogito.Quartz\Cogito.Quartz.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Cogito.Quartz\Cogito.Quartz.csproj" />
+    </ItemGroup>
 
 </Project>
