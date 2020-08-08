@@ -8,11 +8,14 @@
   <ItemGroup>
     <PackageReference Include="Cogito.Extensions.Configuration.Autofac" Version="2.1.8" />
     <PackageReference Include="Cogito.Extensions.Logging.Serilog.Autofac" Version="2.0.12" />
+    <PackageReference Include="Cogito.Extensions.Options.Autofac" Version="2.0.17" />
+    <PackageReference Include="Cogito.Extensions.Options.Configuration.Autofac" Version="2.0.17" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cogito.Components.Quartz\Cogito.Components.Quartz.csproj" />
+    <ProjectReference Include="..\Cogito.Quartz.Autofac\Cogito.Quartz.Autofac.csproj" />
+    <ProjectReference Include="..\Cogito.Quartz.Serilog.Autofac\Cogito.Quartz.Serilog.Autofac.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29721.120
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7271F8CF-C4EC-47FE-91F3-FF3331482C4F}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Quartz", "Cogito.Quartz\Cogito.Quartz.csproj", "{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Quartz.Sample1", "Cogito.Quartz.Sample1\Cogito.Quartz.Sample1.csproj", "{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Serilog", "Cogito.Quartz.Serilog\Cogito.Quartz.Serilog.csproj", "{0298DF51-81F8-4676-BBEF-2E88379170B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Autofac", "Cogito.Quartz.Autofac\Cogito.Quartz.Autofac.csproj", "{50045FEC-896F-4B85-95C7-97566111B05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Serilog.Autofac", "Cogito.Quartz.Serilog.Autofac\Cogito.Quartz.Serilog.Autofac.csproj", "{EFADDB69-863C-484B-8DC2-24DAB8B1F707}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0298DF51-81F8-4676-BBEF-2E88379170B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0298DF51-81F8-4676-BBEF-2E88379170B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0298DF51-81F8-4676-BBEF-2E88379170B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0298DF51-81F8-4676-BBEF-2E88379170B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50045FEC-896F-4B85-95C7-97566111B05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50045FEC-896F-4B85-95C7-97566111B05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50045FEC-896F-4B85-95C7-97566111B05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50045FEC-896F-4B85-95C7-97566111B05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF4B3820-4206-4316-82A5-DEA5792C6A71}
+	EndGlobalSection
+EndGlobal

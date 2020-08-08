@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+      <Description>Automatically registers Serilog extensions with Autofac.</Description>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cogito.Quartz.Autofac\Cogito.Quartz.Autofac.csproj" />
+    <ProjectReference Include="..\Cogito.Quartz.Serilog\Cogito.Quartz.Serilog.csproj" />
+  </ItemGroup>
+
+</Project>

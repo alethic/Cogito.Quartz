@@ -2,7 +2,7 @@
 
 using Cogito.Autofac;
 
-namespace Cogito.Components.Quartz
+namespace Cogito.Quartz.Autofac
 {
 
     /// <summary>

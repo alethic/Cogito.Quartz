@@ -1,11 +1,8 @@
 ﻿using System.Collections.Generic;
 
-using Cogito.Extensions.Options.Configuration.Autofac;
-
-namespace Cogito.Components.Quartz
+namespace Cogito.Quartz.Options
 {
 
-    [RegisterOptions("Quartz")]
     public class QuartzOptions
     {
 

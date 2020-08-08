@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 
 using Cogito.Autofac;
+using Cogito.Quartz.Options;
 
 using Microsoft.Extensions.Options;
 
-namespace Cogito.Components.Quartz
+namespace Cogito.Quartz.Autofac
 {
 
     /// <summary>

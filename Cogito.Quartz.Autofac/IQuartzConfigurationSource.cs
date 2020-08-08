@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Cogito.Components.Quartz
+namespace Cogito.Quartz.Autofac
 {
 
     /// <summary>

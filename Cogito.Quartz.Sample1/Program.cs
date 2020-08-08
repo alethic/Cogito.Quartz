@@ -1,12 +1,13 @@
 ﻿using Autofac.Extensions.DependencyInjection;
-using Cogito.Extensions.Configuration.Autofac;
 
 using Cogito.Autofac;
+using Cogito.Extensions.Options;
+using Cogito.Extensions.Options.Autofac;
 using Cogito.Extensions.Options.Configuration.Autofac;
+using Cogito.Quartz.Options;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Cogito.Extensions.Options.Autofac;
 
 namespace Cogito.Components.Quartz.Sample1
 {

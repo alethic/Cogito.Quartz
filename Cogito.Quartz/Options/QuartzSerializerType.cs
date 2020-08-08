@@ -1,4 +1,4 @@
-﻿namespace Cogito.Components.Quartz
+﻿namespace Cogito.Quartz.Options
 {
 
     /// <summary>

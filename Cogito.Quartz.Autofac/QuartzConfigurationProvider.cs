@@ -8,7 +8,7 @@ using Cogito.Collections;
 
 using Microsoft.Extensions.Logging;
 
-namespace Cogito.Components.Quartz
+namespace Cogito.Quartz.Autofac
 {
 
     [RegisterAs(typeof(QuartzConfigurationProvider))]
