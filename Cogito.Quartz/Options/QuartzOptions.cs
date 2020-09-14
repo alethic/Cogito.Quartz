@@ -7,6 +7,11 @@ namespace Cogito.Quartz.Options
     {
 
         /// <summary>
+        /// Scheduler configuration.
+        /// </summary>
+        public QuartzSchedulerOptions Scheduler { get; set; } = new QuartzSchedulerOptions();
+
+        /// <summary>
         /// Thread pool configuration.
         /// </summary>
         public QuartzThreadPoolOptions ThreadPool { get; set; } = new QuartzThreadPoolOptions();

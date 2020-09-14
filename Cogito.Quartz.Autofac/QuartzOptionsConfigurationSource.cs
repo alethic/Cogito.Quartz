@@ -31,9 +31,13 @@ namespace Cogito.Quartz.Autofac
 
         public IEnumerable<(string Key, string Value)> GetConfiguration()
         {
-
             if (options != null && options.Value is QuartzOptions o)
             {
+                if (!string.IsNullOrWhiteSpace(o.Scheduler?.InstanceName))
+                    o.Settings[StdSchedulerFactory.PropertySchedulerInstanceName] = o.Scheduler?.InstanceName;
+                if (!string.IsNullOrWhiteSpace(o.Scheduler?.InstanceId))
+                    o.Settings[StdSchedulerFactory.PropertySchedulerInstanceId] = o.Scheduler?.InstanceId;
+
                 if (!string.IsNullOrWhiteSpace(o.ThreadPool?.Type))
                     yield return (StdSchedulerFactory.PropertyThreadPoolType, o.ThreadPool?.Type);
                 if (o.ThreadPool?.ThreadCount != null)
