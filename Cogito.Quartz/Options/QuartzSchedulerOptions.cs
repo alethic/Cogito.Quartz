@@ -17,7 +17,7 @@
         /// <summary>
         /// Options for the job factory.
         /// </summary>
-        public QuartzSchedulerJobFactoryOptions JobFactory { get; set; }
+        public QuartzSchedulerJobFactoryOptions JobFactory { get; set; } = new QuartzSchedulerJobFactoryOptions();
 
     }
 
