@@ -37,6 +37,8 @@ namespace Cogito.Quartz.Autofac
                     o.Settings[StdSchedulerFactory.PropertySchedulerInstanceName] = o.Scheduler?.InstanceName;
                 if (!string.IsNullOrWhiteSpace(o.Scheduler?.InstanceId))
                     o.Settings[StdSchedulerFactory.PropertySchedulerInstanceId] = o.Scheduler?.InstanceId;
+                if (!string.IsNullOrWhiteSpace(o.Scheduler?.JobFactory?.Type))
+                    o.Settings[StdSchedulerFactory.PropertySchedulerJobFactoryType] = o.Scheduler?.JobFactory?.Type;
 
                 if (!string.IsNullOrWhiteSpace(o.ThreadPool?.Type))
                     yield return (StdSchedulerFactory.PropertyThreadPoolType, o.ThreadPool?.Type);

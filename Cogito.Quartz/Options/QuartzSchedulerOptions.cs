@@ -14,6 +14,11 @@
         /// </summary>
         public string InstanceId { get; set; }
 
+        /// <summary>
+        /// Options for the job factory.
+        /// </summary>
+        public QuartzSchedulerJobFactoryOptions JobFactory { get; set; }
+
     }
 
 }
