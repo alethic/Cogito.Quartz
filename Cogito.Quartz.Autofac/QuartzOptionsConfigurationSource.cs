@@ -34,11 +34,11 @@ namespace Cogito.Quartz.Autofac
             if (options != null && options.Value is QuartzOptions o)
             {
                 if (!string.IsNullOrWhiteSpace(o.Scheduler?.InstanceName))
-                    o.Settings[StdSchedulerFactory.PropertySchedulerInstanceName] = o.Scheduler?.InstanceName;
+                    yield return (StdSchedulerFactory.PropertySchedulerInstanceName, o.Scheduler?.InstanceName);
                 if (!string.IsNullOrWhiteSpace(o.Scheduler?.InstanceId))
-                    o.Settings[StdSchedulerFactory.PropertySchedulerInstanceId] = o.Scheduler?.InstanceId;
+                    yield return (StdSchedulerFactory.PropertySchedulerInstanceId, o.Scheduler?.InstanceId);
                 if (!string.IsNullOrWhiteSpace(o.Scheduler?.JobFactory?.Type))
-                    o.Settings[StdSchedulerFactory.PropertySchedulerJobFactoryType] = o.Scheduler?.JobFactory?.Type;
+                    yield return (StdSchedulerFactory.PropertySchedulerJobFactoryType, o.Scheduler?.JobFactory?.Type);
 
                 if (!string.IsNullOrWhiteSpace(o.ThreadPool?.Type))
                     yield return (StdSchedulerFactory.PropertyThreadPoolType, o.ThreadPool?.Type);
