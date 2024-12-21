@@ -18,12 +18,12 @@ before_build:
 
 build:
   verbosity: minimal
-  project: Cogito.Quartz.sln
+  project: Cogito.Extensions.Options.sln
 
 artifacts:
   - path: pkg\*.nupkg
-    name: Cogito.Quartz
-
+    name: Cogito.Extensions.Options
+    
 deploy:
   - provider: NuGet
     server: https://nuget.pkg.github.com/alethic/index.json

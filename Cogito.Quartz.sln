@@ -1,23 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29721.120
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7271F8CF-C4EC-47FE-91F3-FF3331482C4F}"
 	ProjectSection(SolutionItems) = preProject
-		appveyor.yml = appveyor.yml
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Cogito.Quartz.dist.msbuildproj = Cogito.Quartz.dist.msbuildproj
+		.github\workflows\Cogito.Quartz.yml = .github\workflows\Cogito.Quartz.yml
 		Directory.Build.props = Directory.Build.props
+		GitVersion.yml = GitVersion.yml
+		global.json = global.json
+		icon.png = icon.png
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Quartz", "Cogito.Quartz\Cogito.Quartz.csproj", "{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Quartz", "src\Cogito.Quartz\Cogito.Quartz.csproj", "{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Quartz.Sample1", "Cogito.Quartz.Sample1\Cogito.Quartz.Sample1.csproj", "{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cogito.Quartz.Sample1", "src\Cogito.Quartz.Sample1\Cogito.Quartz.Sample1.csproj", "{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Serilog", "Cogito.Quartz.Serilog\Cogito.Quartz.Serilog.csproj", "{0298DF51-81F8-4676-BBEF-2E88379170B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Serilog", "src\Cogito.Quartz.Serilog\Cogito.Quartz.Serilog.csproj", "{0298DF51-81F8-4676-BBEF-2E88379170B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Autofac", "Cogito.Quartz.Autofac\Cogito.Quartz.Autofac.csproj", "{50045FEC-896F-4B85-95C7-97566111B05C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Autofac", "src\Cogito.Quartz.Autofac\Cogito.Quartz.Autofac.csproj", "{50045FEC-896F-4B85-95C7-97566111B05C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Serilog.Autofac", "Cogito.Quartz.Serilog.Autofac\Cogito.Quartz.Serilog.Autofac.csproj", "{EFADDB69-863C-484B-8DC2-24DAB8B1F707}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cogito.Quartz.Serilog.Autofac", "src\Cogito.Quartz.Serilog.Autofac\Cogito.Quartz.Serilog.Autofac.csproj", "{EFADDB69-863C-484B-8DC2-24DAB8B1F707}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47CA832B-6C87-491D-BDDC-221D08C5F392}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dist", "dist", "{8B55C9EF-F027-476A-BA44-5A33EDFB41B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dist-nuget", "src\dist-nuget\dist-nuget.csproj", "{1CFE8537-6564-46B1-906F-D5F32873AF34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dist-tests", "src\dist-tests\dist-tests.csproj", "{61DE1824-EFC8-4B55-BAE4-C178D51EF210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,9 +59,26 @@ Global
 		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFADDB69-863C-484B-8DC2-24DAB8B1F707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFE8537-6564-46B1-906F-D5F32873AF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFE8537-6564-46B1-906F-D5F32873AF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFE8537-6564-46B1-906F-D5F32873AF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFE8537-6564-46B1-906F-D5F32873AF34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61DE1824-EFC8-4B55-BAE4-C178D51EF210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61DE1824-EFC8-4B55-BAE4-C178D51EF210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61DE1824-EFC8-4B55-BAE4-C178D51EF210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61DE1824-EFC8-4B55-BAE4-C178D51EF210}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D19FDDD4-BEBF-4D6D-82A7-01AB87B5E582} = {47CA832B-6C87-491D-BDDC-221D08C5F392}
+		{A462141A-5ABA-438B-B00B-5A5CA8C0B1CD} = {47CA832B-6C87-491D-BDDC-221D08C5F392}
+		{0298DF51-81F8-4676-BBEF-2E88379170B5} = {47CA832B-6C87-491D-BDDC-221D08C5F392}
+		{50045FEC-896F-4B85-95C7-97566111B05C} = {47CA832B-6C87-491D-BDDC-221D08C5F392}
+		{EFADDB69-863C-484B-8DC2-24DAB8B1F707} = {47CA832B-6C87-491D-BDDC-221D08C5F392}
+		{1CFE8537-6564-46B1-906F-D5F32873AF34} = {8B55C9EF-F027-476A-BA44-5A33EDFB41B2}
+		{61DE1824-EFC8-4B55-BAE4-C178D51EF210} = {8B55C9EF-F027-476A-BA44-5A33EDFB41B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF4B3820-4206-4316-82A5-DEA5792C6A71}

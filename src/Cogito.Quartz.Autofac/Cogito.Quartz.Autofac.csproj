@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Description>Provides utilites and extensions for Quartz and Autofac.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac.Extras.Quartz" Version="10.0.0" />
+        <PackageReference Include="Cogito.Autofac" Version="6.0.0" />
+        <PackageReference Include="Cogito.Extensions.Options.Autofac" Version="4.0.0" />
+        <PackageReference Include="Cogito.Extensions.Options.Configuration.Autofac" Version="4.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Cogito.Quartz\Cogito.Quartz.csproj" />
+    </ItemGroup>
+
+</Project>
