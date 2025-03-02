@@ -24,10 +24,9 @@ namespace Cogito.Quartz.Autofac
         protected override void Register(ContainerBuilder builder)
         {
             builder.RegisterFromAttributes(typeof(AssemblyModule).Assembly);
-            builder.RegisterModule(new QuartzAutofacFactoryModule() { ConfigurationProvider = ctx => ctx.Resolve<QuartzConfigurationProvider>().Build() });
-            builder.Configure<Cogito.Quartz.Options.QuartzOptions>("Quartz");
+            builder.Configure<QuartzOptions>("Quartz");
             builder.Configure<QuartzHostedServiceOptions>("Quartz:Host");
-            builder.Populate(s => s.AddQuartzHostedService());
+            builder.Populate(s => s.AddQuartz().AddQuartzHostedService());
             builder.RegisterBuildCallback(ctx => LogContext.SetCurrentLogProvider(ctx.Resolve<ILoggerFactory>()));
         }
 
