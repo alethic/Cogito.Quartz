@@ -25,7 +25,7 @@ namespace Cogito.Quartz.Autofac
         {
             builder.RegisterFromAttributes(typeof(AssemblyModule).Assembly);
             builder.Configure<QuartzOptions>("Quartz");
-            builder.Configure<QuartzHostedServiceOptions>("Quartz:Host");
+            builder.Configure<QuartzHostedServiceOptions>("Quartz:Host"); 
             builder.Populate(s => s.AddQuartz().AddQuartzHostedService());
             builder.RegisterBuildCallback(ctx => LogContext.SetCurrentLogProvider(ctx.Resolve<ILoggerFactory>()));
         }
