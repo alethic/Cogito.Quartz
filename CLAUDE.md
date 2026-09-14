@@ -9,7 +9,7 @@ Publishes 4 packages: `Cogito.Quartz`, `Cogito.Quartz.Autofac`, `Cogito.Quartz.S
 ## Build and test
 
 ```shell
-dotnet restore Cogito.Quartz.sln
+dotnet restore Cogito.Quartz.slnx
 dotnet msbuild -p:Configuration=Release Cogito.Quartz.dist.msbuildproj
 ```
 
