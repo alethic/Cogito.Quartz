@@ -10,7 +10,10 @@
         <PackageReference Include="Cogito.Extensions.Logging.Serilog.Autofac" Version="3.0.0" />
         <PackageReference Include="Cogito.Extensions.Options.Autofac" Version="4.0.0" />
         <PackageReference Include="Cogito.Extensions.Options.Configuration.Autofac" Version="4.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.12" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.12" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.12" />
         <PackageReference Include="Quartz.Spi.CosmosDbJobStore" Version="1.1.0" />
     </ItemGroup>
 

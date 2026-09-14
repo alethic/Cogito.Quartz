@@ -7,13 +7,13 @@
 
     <ItemGroup>
         <PackageReference Include="Cogito.Autofac.DependencyInjection" Version="6.1.0" />
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.1" />
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
-        <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
-        <PackageReference Include="Quartz" Version="3.13.1" />
-        <PackageReference Include="Quartz.Extensions.Hosting" Version="3.13.1" />
-        <PackageReference Include="Quartz.Jobs" Version="3.13.1" />
-        <PackageReference Include="Quartz.Serialization.Json" Version="3.13.1" />
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="10.0.12" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.12" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.12" />
+        <PackageReference Include="Quartz" Version="3.22.0" />
+        <PackageReference Include="Quartz.Extensions.Hosting" Version="3.22.0" />
+        <PackageReference Include="Quartz.Jobs" Version="3.22.0" />
+        <PackageReference Include="Quartz.Serialization.Json" Version="3.22.0" />
     </ItemGroup>
 
 </Project>
