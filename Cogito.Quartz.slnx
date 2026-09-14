@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/dist/">
+    <Project Path="src/dist-nuget/dist-nuget.csproj" />
+    <Project Path="src/dist-tests/dist-tests.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitattributes" />
+    <File Path=".github/workflows/Cogito.Quartz.yml" />
+    <File Path=".gitignore" />
+    <File Path="Cogito.Quartz.dist.msbuildproj" />
+    <File Path="Directory.Build.props" />
+    <File Path="GitVersion.yml" />
+    <File Path="global.json" />
+    <File Path="icon.png" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Cogito.Quartz.Autofac/Cogito.Quartz.Autofac.csproj" />
+    <Project Path="src/Cogito.Quartz.Sample1/Cogito.Quartz.Sample1.csproj" />
+    <Project Path="src/Cogito.Quartz.Serilog.Autofac/Cogito.Quartz.Serilog.Autofac.csproj" />
+    <Project Path="src/Cogito.Quartz.Serilog/Cogito.Quartz.Serilog.csproj" />
+    <Project Path="src/Cogito.Quartz/Cogito.Quartz.csproj" />
+  </Folder>
+</Solution>
